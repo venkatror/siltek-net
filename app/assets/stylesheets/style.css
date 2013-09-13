@@ -1,0 +1,2512 @@
+#Siltek-main
+{
+   background: #FFFFFF url('/assets/page.png') repeat-x scroll;
+   background: url('/assets/pageglare.png') no-repeat, url('/assets/page.png') repeat-x, #FFFFFF;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.Siltek-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.Siltek-button
+{
+   border: 0;
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #181F20;
+   background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -moz-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -o-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -ms-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   -svg-background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border-width: 0;
+   padding:0 23px;
+   margin:0 auto;
+   height:36px;
+}
+
+.Siltek-postcontent,
+.Siltek-postheadericons,
+.Siltek-postfootericons,
+.Siltek-blockcontent,
+ul.Siltek-vmenu a 
+{
+   text-align: left;
+}
+
+.Siltek-postcontent,
+.Siltek-postcontent li,
+.Siltek-postcontent table,
+.Siltek-postcontent a,
+.Siltek-postcontent a:link,
+.Siltek-postcontent a:visited,
+.Siltek-postcontent a.visited,
+.Siltek-postcontent a:hover,
+.Siltek-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent p
+{
+   margin: 12px 0;
+}
+
+.Siltek-postcontent h1, .Siltek-postcontent h1 a, .Siltek-postcontent h1 a:link, .Siltek-postcontent h1 a:visited, .Siltek-postcontent h1 a:hover,
+.Siltek-postcontent h2, .Siltek-postcontent h2 a, .Siltek-postcontent h2 a:link, .Siltek-postcontent h2 a:visited, .Siltek-postcontent h2 a:hover,
+.Siltek-postcontent h3, .Siltek-postcontent h3 a, .Siltek-postcontent h3 a:link, .Siltek-postcontent h3 a:visited, .Siltek-postcontent h3 a:hover,
+.Siltek-postcontent h4, .Siltek-postcontent h4 a, .Siltek-postcontent h4 a:link, .Siltek-postcontent h4 a:visited, .Siltek-postcontent h4 a:hover,
+.Siltek-postcontent h5, .Siltek-postcontent h5 a, .Siltek-postcontent h5 a:link, .Siltek-postcontent h5 a:visited, .Siltek-postcontent h5 a:hover,
+.Siltek-postcontent h6, .Siltek-postcontent h6 a, .Siltek-postcontent h6 a:link, .Siltek-postcontent h6 a:visited, .Siltek-postcontent h6 a:hover,
+.Siltek-blockheader .t, .Siltek-blockheader .t a, .Siltek-blockheader .t a:link, .Siltek-blockheader .t a:visited, .Siltek-blockheader .t a:hover,
+.Siltek-vmenublockheader .t, .Siltek-vmenublockheader .t a, .Siltek-vmenublockheader .t a:link, .Siltek-vmenublockheader .t a:visited, .Siltek-vmenublockheader .t a:hover,
+.Siltek-headline, .Siltek-headline a, .Siltek-headline a:link, .Siltek-headline a:visited, .Siltek-headline a:hover,
+.Siltek-slogan, .Siltek-slogan a, .Siltek-slogan a:link, .Siltek-slogan a:visited, .Siltek-slogan a:hover,
+.Siltek-postheader, .Siltek-postheader a, .Siltek-postheader a:link, .Siltek-postheader a:visited, .Siltek-postheader a:hover
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+.Siltek-postcontent a, .Siltek-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #188095;
+}
+
+.Siltek-postcontent a:visited, .Siltek-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #344446;
+}
+
+.Siltek-postcontent  a:hover, .Siltek-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #188095;
+}
+
+.Siltek-postcontent h1
+{
+   color: #188095;
+   margin: 21px 0 21px 20px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent h1
+{
+   margin: 21px 0 21px 20px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h1 a, .Siltek-postcontent h1 a:link, .Siltek-postcontent h1 a:hover, .Siltek-postcontent h1 a:visited, .Siltek-blockcontent h1 a, .Siltek-blockcontent h1 a:link, .Siltek-blockcontent h1 a:hover, .Siltek-blockcontent h1 a:visited 
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h2
+{
+   color: #188095;
+   margin-top: 19px;
+   margin-bottom: 19px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent h2
+{
+   margin-top: 19px;
+   margin-bottom: 19px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h2 a, .Siltek-postcontent h2 a:link, .Siltek-postcontent h2 a:hover, .Siltek-postcontent h2 a:visited, .Siltek-blockcontent h2 a, .Siltek-blockcontent h2 a:link, .Siltek-blockcontent h2 a:hover, .Siltek-blockcontent h2 a:visited 
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h3
+{
+   color: #188095;
+   margin: 20px 0 10px;
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-transform: uppercase;
+}
+
+.Siltek-blockcontent h3
+{
+   margin: 20px 0 10px;
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-transform: uppercase;
+}
+
+.Siltek-postcontent h3 a, .Siltek-postcontent h3 a:link, .Siltek-postcontent h3 a:hover, .Siltek-postcontent h3 a:visited, .Siltek-blockcontent h3 a, .Siltek-blockcontent h3 a:link, .Siltek-blockcontent h3 a:hover, .Siltek-blockcontent h3 a:visited 
+{
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-transform: uppercase;
+}
+
+.Siltek-postcontent h4
+{
+   color: #1C2526;
+   margin: 20px 0;
+   font-size: 36px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent h4
+{
+   margin: 20px 0;
+   font-size: 36px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h4 a, .Siltek-postcontent h4 a:link, .Siltek-postcontent h4 a:hover, .Siltek-postcontent h4 a:visited, .Siltek-blockcontent h4 a, .Siltek-blockcontent h4 a:link, .Siltek-blockcontent h4 a:hover, .Siltek-blockcontent h4 a:visited 
+{
+   font-size: 36px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h5
+{
+   color: #1C2526;
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent h5
+{
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h5 a, .Siltek-postcontent h5 a:link, .Siltek-postcontent h5 a:hover, .Siltek-postcontent h5 a:visited, .Siltek-blockcontent h5 a, .Siltek-blockcontent h5 a:link, .Siltek-blockcontent h5 a:hover, .Siltek-blockcontent h5 a:visited 
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h6
+{
+   color: #344446;
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent h6
+{
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postcontent h6 a, .Siltek-postcontent h6 a:link, .Siltek-postcontent h6 a:hover, .Siltek-postcontent h6 a:visited, .Siltek-blockcontent h6 a, .Siltek-blockcontent h6 a:link, .Siltek-blockcontent h6 a:hover, .Siltek-blockcontent h6 a:visited 
+{
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #Siltek-hmenu-bg, .Siltek-sheet, .Siltek-hmenu a, .Siltek-vmenu a, .Siltek-slidenavigator > a, .Siltek-checkbox:before, .Siltek-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #Siltek-hmenu-bg, .Siltek-sheet, .Siltek-slidenavigator > a, .Siltek-checkbox:before, .Siltek-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 961px;
+   color: #293638;
+}
+
+.Siltek-header:before, #Siltek-header-bg:before, .Siltek-layout-cell:before, .Siltek-layout-wrapper:before, .Siltek-footer:before, .Siltek-nav:before, #Siltek-hmenu-bg:before, .Siltek-sheet:before
+{
+   width: 100%;
+   content: " ";
+   display: table;
+}
+.Siltek-header:after, #Siltek-header-bg:after, .Siltek-layout-cell:after, .Siltek-layout-wrapper:after, .Siltek-footer:after, .Siltek-nav:after, #Siltek-hmenu-bg:after, .Siltek-sheet:after,
+.cleared, .clearfix:after {
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .Siltek-postcontent li h1, .Siltek-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .Siltek-postcontent li h2, .Siltek-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .Siltek-postcontent li h3, .Siltek-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .Siltek-postcontent li h4, .Siltek-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .Siltek-postcontent li h5, .Siltek-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .Siltek-postcontent li h6, .Siltek-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .Siltek-postcontent li p, .Siltek-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.Siltek-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.Siltek-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.Siltek-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.Siltek-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.Siltek-object1343010599
+{
+    display: block;
+    left: 2.73%;
+    margin-left: -6px;
+    position: absolute;
+    top: 12px;
+    width: 249px;
+    height: 84px;
+    background-image: url('/assets/object1343010599.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 24;
+}
+.Siltek-object132855161
+{
+    display: block;
+    left: 92.72%;
+    margin-left: -158px;
+    position: absolute;
+    top: 31px;
+    width: 171px;
+    height: 52px;
+    background-image: url('/assets/object132855161.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 25;
+}
+
+
+
+
+
+
+#Siltek-hmenu-bg
+{
+   position: absolute;
+   overflow: hidden;
+   left: 0;
+   margin: 0 auto;
+   width: 100%;
+   z-index: auto;
+   border-radius: 0;
+}
+
+.Siltek-header
+{
+   border:1px solid transparent;
+   margin:0 auto;
+   position:relative;
+   height: 100px;
+   background-image: url('/assets/header.png');
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+.responsive .Siltek-header 
+{
+   background-image: url('/assets/header.png');
+   background-position: center center;
+}
+
+.Siltek-header-inner{
+   position: relative;
+   width: 961px;
+   z-index: auto !important;
+   margin: 0 auto;
+}
+
+.Siltek-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.Siltek-sheet
+{
+   background: #FFFFFF;
+   background: transparent;
+   -webkit-border-radius:0 0 23px 23px;
+   -moz-border-radius:0 0 23px 23px;
+   border-radius:0 0 23px 23px;
+   border:1px solid transparent;
+   border-top:none;
+   margin:10px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 961px;
+   z-index: auto !important;
+}
+
+.Siltek-nav
+{
+   background: #3F3F3F;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -moz-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -o-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -ms-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   -svg-background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   padding:6px;
+   margin:0 auto;
+   position: relative;
+   z-index: 499;
+}
+
+ul.Siltek-hmenu a, ul.Siltek-hmenu a:link, ul.Siltek-hmenu a:visited, ul.Siltek-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.Siltek-hmenu, ul.Siltek-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.Siltek-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.Siltek-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.Siltek-hmenu:after, ul.Siltek-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.Siltek-hmenu, ul.Siltek-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.Siltek-hmenu 
+{
+   display: inline-block;
+   vertical-align: middle;
+   padding-left: 6px;
+   padding-right: 6px;
+}
+
+.Siltek-nav-inner:before 
+{
+   content:' ';
+}
+
+.Siltek-nav-inner{
+   text-align: left;
+   margin:0 auto;
+}
+
+.desktop .Siltek-nav
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.Siltek-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.Siltek-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.Siltek-hmenu
+{
+   float: left;
+}
+
+.Siltek-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.Siltek-hmenu>li {
+   margin-left: 5px;
+}
+ul.Siltek-hmenu>li:first-child {
+   margin-left: 2px;
+}
+ul.Siltek-hmenu>li:last-child, ul.Siltek-hmenu>li.last-child {
+   margin-right: 2px;
+}
+
+ul.Siltek-hmenu>li>a
+{
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   padding:0 15px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 30px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #FFFFFF;
+   line-height: 30px;
+   text-align: center;
+}
+
+.Siltek-hmenu a, 
+.Siltek-hmenu a:link, 
+.Siltek-hmenu a:visited, 
+.Siltek-hmenu a.active, 
+.Siltek-hmenu a:hover
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: capitalize;
+   text-align: left;
+}
+
+ul.Siltek-hmenu>li>a.active
+{
+   background: #3F3F3F;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -moz-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -o-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -ms-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   -svg-background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   padding:0 15px;
+   margin:0 auto;
+   color: #50AD47;
+   text-decoration: none;
+}
+
+ul.Siltek-hmenu>li>a:visited, 
+ul.Siltek-hmenu>li>a:hover, 
+ul.Siltek-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.Siltek-hmenu>li>a:hover, .desktop ul.Siltek-hmenu>li:hover>a
+{
+   background: #3F3F3F;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -moz-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -o-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: -ms-linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   -svg-background: linear-gradient(top, #545454 0, #2B2B2B 100%) no-repeat;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   padding:0 15px;
+   margin:0 auto;
+}
+ul.Siltek-hmenu>li>a:hover, 
+.desktop ul.Siltek-hmenu>li:hover>a {
+   color: #50AD47;
+   text-decoration: none;
+}
+
+ul.Siltek-hmenu>li:before
+{
+   position:absolute;
+   display: block;
+   content:' ';
+   top:0;
+   left:  -5px;
+   width:5px;
+   height: 30px;
+   background: url('/assets/menuseparator.png') center center no-repeat;
+}
+ul.Siltek-hmenu>li:first-child:before{
+   display:none;
+}
+
+ul.Siltek-hmenu li li a
+{
+   background: #C1CFD1;
+   background: transparent;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   padding:0 8px;
+   margin:0 auto;
+}
+ul.Siltek-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 1px;
+   margin-bottom: 1px;
+}
+
+.desktop ul.Siltek-hmenu li li ul>li:first-child 
+{
+   margin-top: 0;
+}
+
+ul.Siltek-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.Siltek-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 23px;
+   min-width: 7em;
+   border: 0 solid transparent;
+   text-align: left;
+   line-height: 23px;
+   color: #FFFFFF;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+.Siltek-hmenu ul a:link, 
+.Siltek-hmenu ul a:visited, 
+.Siltek-hmenu ul a.active, 
+.Siltek-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 23px;
+   color: #FFFFFF;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+ul.Siltek-hmenu li li:after
+{
+   display: block;
+   position: absolute;
+   content: ' ';
+   height: 0;
+   top: -1px;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   border-bottom: 1px solid #586564;
+}
+
+.desktop ul.Siltek-hmenu li li:first-child:before, 
+.desktop ul.Siltek-hmenu li li:first-child:after 
+{
+   display: none;
+} 
+
+ul.Siltek-hmenu ul li a:hover, .desktop ul.Siltek-hmenu ul li:hover>a
+{
+   background: #3F3F3F;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+}
+
+.Siltek-hmenu ul li a:hover
+{
+   color: #50AD47;
+}
+
+.desktop .Siltek-hmenu ul li:hover>a
+{
+   color: #50AD47;
+}
+
+ul.Siltek-hmenu ul:before
+{
+   background: #3F3F3F;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border:1px solid #9EB4B7;
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop ul.Siltek-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop ul.Siltek-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.Siltek-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('/assets/spacer.gif');
+}
+
+.desktop ul.Siltek-hmenu>li>ul
+{
+   padding: 12px 32px 32px 32px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.Siltek-hmenu ul ul
+{
+   padding: 32px 32px 32px 14px;
+   margin: -32px 0 0 -9px;
+}
+
+.desktop ul.Siltek-hmenu ul.Siltek-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.Siltek-hmenu ul.Siltek-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop ul.Siltek-hmenu li li:hover>ul.Siltek-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop ul.Siltek-hmenu li li:hover>ul.Siltek-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop ul.Siltek-hmenu ul ul.Siltek-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 32px 32px 32px 14px;
+   margin: -32px 0 0 -9px;
+}
+
+.desktop ul.Siltek-hmenu ul ul.Siltek-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 32px 14px 32px 32px;
+   margin: -32px -9px 0 0;
+}
+
+.desktop ul.Siltek-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop ul.Siltek-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop ul.Siltek-hmenu ul ul:before
+{
+   border-radius: 3px;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 12px;
+}
+
+.desktop ul.Siltek-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop ul.Siltek-hmenu>li>ul.Siltek-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.Siltek-hmenu>li>ul.Siltek-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.Siltek-hmenu ul ul.Siltek-hmenu-left-to-right:before {
+   right: 30px;
+   left: 12px;
+}
+.desktop ul.Siltek-hmenu ul ul.Siltek-hmenu-right-to-left:before {
+   right: 12px;
+   left: 30px;
+}
+
+.Siltek-layout-wrapper
+{
+   position: relative;
+   margin: 0 auto 0 auto;
+   z-index: auto !important;
+}
+
+.Siltek-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.Siltek-content-layout-row 
+{
+   display: table-row;
+}
+
+.Siltek-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */ 
+.Siltek-postcontent .Siltek-content-layout
+{
+   border-collapse: collapse;
+}
+
+.Siltek-block
+{
+   margin:10px;
+}
+div.Siltek-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.Siltek-blockheader
+{
+   padding:6px 5px;
+   margin:0 auto;
+}
+.Siltek-blockheader .t,
+.Siltek-blockheader .t a,
+.Siltek-blockheader .t a:link,
+.Siltek-blockheader .t a:visited, 
+.Siltek-blockheader .t a:hover
+{
+   color: #000000;
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   margin: 0 10px 0 5px;
+}
+
+.Siltek-blockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #293638;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+.Siltek-blockcontent table,
+.Siltek-blockcontent li, 
+.Siltek-blockcontent a,
+.Siltek-blockcontent a:link,
+.Siltek-blockcontent a:visited,
+.Siltek-blockcontent a:hover
+{
+   color: #293638;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-blockcontent p
+{
+   margin: 6px 0;
+}
+
+.Siltek-blockcontent a, .Siltek-blockcontent a:link
+{
+   color: #188095;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.Siltek-blockcontent a:visited, .Siltek-blockcontent a.visited
+{
+   color: #78979B;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.Siltek-blockcontent a:hover, .Siltek-blockcontent a.hover
+{
+   color: #09BDDC;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.Siltek-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .Siltek-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #485D61;
+}
+
+.Siltek-block ul>li, .Siltek-block ol
+{
+   padding: 0;
+}
+
+.Siltek-block ul>li
+{
+   padding-left: 12px;
+}
+
+.Siltek-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.Siltek-button,
+a.Siltek-button:link,
+a:link.Siltek-button:link,
+body a.Siltek-button:link,
+a.Siltek-button:visited,
+body a.Siltek-button:visited,
+input.Siltek-button,
+button.Siltek-button
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-transform: uppercase;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #C6CDCD;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 36px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.Siltek-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .Siltek-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.Siltek-search-button span
+{
+   vertical-align: middle;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-transform: uppercase;
+}
+
+.Siltek-block select 
+{
+   width:96%;
+}
+
+input.Siltek-button
+{
+   float: none !important;
+}
+
+.Siltek-button.active, .Siltek-button.active:hover
+{
+   background: #181F20;
+   background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -moz-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -o-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: -ms-linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   -svg-background: linear-gradient(top, #3B4C4F 0, #364749 10%, #303E41 20%, #273335 20%, #1C2526 50%, #14191A 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border-width: 0;
+   padding:0 23px;
+   margin:0 auto;
+}
+.Siltek-button.active, .Siltek-button.active:hover {
+   color: #FFFFFF !important;
+}
+
+.Siltek-button.hover, .Siltek-button:hover
+{
+   background: #43585B;
+   background: linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   background: -moz-linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   background: -o-linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   background: -ms-linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   background: linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   -svg-background: linear-gradient(top, #577175 0, #526C6F 10%, #4C6367 20%, #43585B 20%, #384A4C 50%, #2E3B3E 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border-width: 0;
+   padding:0 23px;
+   margin:0 auto;
+}
+.Siltek-button.hover, .Siltek-button:hover {
+   color: #D9E1E3 !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #F9FAFB;
+   -webkit-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   border:1px solid #3AC3DF;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: auto;
+   padding: 4px 0;
+   color: #115B69 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-shadow: none;
+}
+input.Siltek-error, textarea.Siltek-error
+{
+   background: #F9FAFB;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.Siltek-error, textarea.Siltek-error {
+   color: #115B69 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.Siltek-search input[type="text"]
+{
+   background: #F9FAFB;
+   border-radius: 0;
+   border:1px solid #CCD6E0;
+   margin:0 auto;
+   width: 100%;
+   padding: 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #115B69 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.Siltek-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.Siltek-search input, a.Siltek-search-button
+{
+   top:0;
+   right:0;
+}
+
+form.Siltek-search>input, a.Siltek-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.Siltek-search input[type="submit"], input.Siltek-search-button, a.Siltek-search-button
+{
+   background: #C1CFD1;
+   -webkit-border-radius:0 -1px -1px 0;
+   -moz-border-radius:0 -1px -1px 0;
+   border-radius:0 -1px -1px 0;
+   margin:0 auto;
+}
+form.Siltek-search input[type="submit"], input.Siltek-search-button, a.Siltek-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border: 0;
+   top: 1px;
+   bottom: 1px;
+   right: 	1px;
+   padding:0 6px;
+   color: #4E666A !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   cursor: pointer;
+}
+
+a.Siltek-search-button span.Siltek-search-button-text, a.Siltek-search-button:after {
+   vertical-align:middle;
+}
+
+a.Siltek-search-button:after {
+   display:inline-block;
+   content:' ';
+   height: 100%;
+}
+
+a.Siltek-search-button, a.Siltek-search-button span,
+a.Siltek-search-button:visited, a.Siltek-search-button.visited,
+a.Siltek-search-button:hover, a.Siltek-search-button.hover 
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+label.Siltek-checkbox:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.Siltek-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #0E4853 !important;
+}
+
+.Siltek-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.Siltek-checkbox.active:before
+{
+   background: #B8C1C1;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.Siltek-checkbox.hovered:before
+{
+   background: #D9DEDE;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.Siltek-radiobutton:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.Siltek-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+   color: #0E4853 !important;
+}
+
+.Siltek-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.Siltek-radiobutton.active:before
+{
+   background: #B8C1C1;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.Siltek-radiobutton.hovered:before
+{
+   background: #D9DEDE;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.Siltek-comments
+{
+   border-top:1px dotted #A0ACAB;
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.Siltek-comments h2
+{
+   color: #1F2323;
+}
+
+.Siltek-comment-inner
+{
+   background: #E2E8EE;
+   background: transparent;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   padding:5px;
+   margin:0 auto;
+   margin-left: 94px;
+}
+.Siltek-comment-avatar 
+{
+   float:left;
+   width:80px;
+   height:80px;
+   padding:1px;
+   background:#fff;
+   border:1px solid #E2E8EE;
+}
+
+.Siltek-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.Siltek-comment-content
+{
+   padding:10px 0;
+   color: #293638;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-comment
+{
+   margin-top: 6px;
+}
+
+.Siltek-comment:first-child
+{
+   margin-top: 0;
+}
+
+.Siltek-comment-header
+{
+   color: #1F2323;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.Siltek-comment-header a, 
+.Siltek-comment-header a:link, 
+.Siltek-comment-header a:visited,
+.Siltek-comment-header a.visited,
+.Siltek-comment-header a:hover,
+.Siltek-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.Siltek-comment-header a, .Siltek-comment-header a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #647372;
+}
+
+.Siltek-comment-header a:visited, .Siltek-comment-header a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #647372;
+}
+
+.Siltek-comment-header a:hover,  .Siltek-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #647372;
+}
+
+.Siltek-comment-content a, 
+.Siltek-comment-content a:link, 
+.Siltek-comment-content a:visited,
+.Siltek-comment-content a.visited,
+.Siltek-comment-content a:hover,
+.Siltek-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-comment-content a, .Siltek-comment-content a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #187D91;
+}
+
+.Siltek-comment-content a:visited, .Siltek-comment-content a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #384A4C;
+}
+
+.Siltek-comment-content a:hover,  .Siltek-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #187D91;
+}
+
+.Siltek-pager
+{
+   background: #EFF2F5;
+   background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #A0ACAB;
+   padding:5px;
+}
+
+.Siltek-pager>*:last-child,
+.Siltek-pager>*:last-child:hover
+{
+   margin-right:0;
+}
+
+.Siltek-pager>span {
+   cursor:default;
+}
+
+.Siltek-pager>*
+{
+   background: #D9DEDE;
+   background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #D9DEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.Siltek-pager a:link,
+.Siltek-pager a:visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #1F2323
+;
+}
+
+.Siltek-pager .active
+{
+   background: #B6BFC9;
+   background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -moz-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -o-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -ms-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   -svg-background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   border:1px solid #D9DEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+   color: #FFFFFF
+;
+}
+
+.Siltek-pager .more
+{
+   background: #D9DEDE;
+   background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #A5B1B0 100%) no-repeat;
+   border:1px solid #D9DEDE;
+   margin:0 4px 0 auto;
+}
+.Siltek-pager a.more:link,
+.Siltek-pager a.more:visited
+{
+   color: #093139
+;
+}
+.Siltek-pager a:hover
+{
+   background: #B8C1C1;
+   background: linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   background: -moz-linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   background: -o-linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   background: -ms-linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   background: linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   -svg-background: linear-gradient(top, #E4E7E7 0, #8C9B9B 100%) no-repeat;
+   border:1px solid #D9DEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+}
+.Siltek-pager  a:hover,
+.Siltek-pager  a.more:hover
+{
+   color: #212626
+;
+}
+.Siltek-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   right: 0;
+   text-decoration:none;
+}
+
+.Siltek-pager>*:last-child:after{
+   display:none;
+}
+
+.Siltek-commentsform
+{
+   background: #E2E8EE;
+   background: transparent;
+   padding:10px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #1F2323;
+}
+
+.Siltek-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #1F2323;
+}
+
+.Siltek-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.Siltek-commentsform input:not([type=submit]), .Siltek-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.Siltek-commentsform .form-submit
+{
+   margin-top: 10px;
+}
+
+a img
+{
+   border: 0;
+}
+
+.Siltek-article img, img.Siltek-article, .Siltek-block img, .Siltek-footer img
+{
+   margin: 0 0 0 0;
+}
+
+.Siltek-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.Siltek-article table, table.Siltek-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.Siltek-post .Siltek-content-layout-br
+{
+   height: 0;
+}
+
+.Siltek-article th, .Siltek-article td
+{
+   padding: 2px;
+   vertical-align: top;
+   text-align: left;
+}
+
+.Siltek-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.Siltek-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.Siltek-postheader
+{
+   color: #FFFFFF;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postheader a, 
+.Siltek-postheader a:link, 
+.Siltek-postheader a:visited,
+.Siltek-postheader a.visited,
+.Siltek-postheader a:hover,
+.Siltek-postheader a.hovered
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-postheader a, .Siltek-postheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #156D7F;
+}
+
+.Siltek-postheader a:visited, .Siltek-postheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #526C6F;
+}
+
+.Siltek-postheader a:hover,  .Siltek-postheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #188095;
+}
+
+.Siltek-postheadericons,
+.Siltek-postheadericons a,
+.Siltek-postheadericons a:link,
+.Siltek-postheadericons a:visited,
+.Siltek-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #293638;
+}
+
+.Siltek-postheadericons
+{
+   padding: 1px;
+}
+
+.Siltek-postheadericons a, .Siltek-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #454F4F;
+}
+
+.Siltek-postheadericons a:visited, .Siltek-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #1C93AB;
+}
+
+.Siltek-postheadericons a:hover, .Siltek-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: underline;
+   color: #E2341D;
+}
+
+.Siltek-postpdficon:before
+{
+   content:url('images/postpdficon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .Siltek-postpdficon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-postprinticon:before
+{
+   content:url('/assets/postprinticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .Siltek-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-postemailicon:before
+{
+   content:url('/assets/postemailicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .Siltek-postemailicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-postcontent ul>li:before,  .Siltek-post ul>li:before,  .Siltek-textblock ul>li:before
+{
+   content:url('/assets/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .Siltek-postcontent ul>li:before, .opera   .Siltek-post ul>li:before, .opera   .Siltek-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-postcontent li, .Siltek-post li, .Siltek-textblock li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 200%;
+   color: #293638;
+   margin: 0 0 0 6px;
+}
+
+.Siltek-postcontent ul>li, .Siltek-post ul>li, .Siltek-textblock ul>li, .Siltek-postcontent ol, .Siltek-post ol, .Siltek-textblock ol
+{
+   padding: 0;
+}
+
+.Siltek-postcontent ul>li, .Siltek-post ul>li, .Siltek-textblock ul>li
+{
+   padding-left: 17px;
+}
+
+.Siltek-postcontent ul>li:before,  .Siltek-post ul>li:before,  .Siltek-textblock ul>li:before
+{
+   margin-left: -17px;
+}
+
+.Siltek-postcontent ol, .Siltek-post ol, .Siltek-textblock ol, .Siltek-postcontent ul, .Siltek-post ul, .Siltek-textblock ul
+{
+   margin: 1em 0 1em 6px;
+}
+
+.Siltek-postcontent li ol, .Siltek-post li ol, .Siltek-textblock li ol, .Siltek-postcontent li ul, .Siltek-post li ul, .Siltek-textblock li ul
+{
+   margin: 0.5em 0 0.5em 6px;
+}
+
+.Siltek-postcontent li, .Siltek-post li, .Siltek-textblock li
+{
+   margin: 0 0 0 0;
+}
+
+.Siltek-postcontent ol>li, .Siltek-post ol>li, .Siltek-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.Siltek-postcontent ul>li, .Siltek-post ul>li, .Siltek-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #EDF1F2 url('/assets/postquote.png') no-repeat scroll;
+   padding:0 0 0 28px;
+   margin:10px 10px 10px 50px;
+   color: #0F1415;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .Siltek-postcontent blockquote a, .Siltek-blockcontent blockquote a, .Siltek-footer blockquote a,
+blockquote a:link, .Siltek-postcontent blockquote a:link, .Siltek-blockcontent blockquote a:link, .Siltek-footer blockquote a:link,
+blockquote a:visited, .Siltek-postcontent blockquote a:visited, .Siltek-blockcontent blockquote a:visited, .Siltek-footer blockquote a:visited,
+blockquote a:hover, .Siltek-postcontent blockquote a:hover, .Siltek-blockcontent blockquote a:hover, .Siltek-footer blockquote a:hover
+{
+   color: #0F1415;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.Siltek-postcontent blockquote p,
+.Siltek-blockcontent blockquote p,
+.Siltek-footer blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+.Siltek-postfootericons,
+.Siltek-postfootericons a,
+.Siltek-postfootericons a:link,
+.Siltek-postfootericons a:visited,
+.Siltek-postfootericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #293638;
+}
+
+.Siltek-postfootericons
+{
+   padding: 1px;
+}
+
+.Siltek-postfootericons a, .Siltek-postfootericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #156D7F;
+}
+
+.Siltek-postfootericons a:visited, .Siltek-postfootericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #454F4F;
+}
+
+.Siltek-postfootericons a:hover, .Siltek-postfootericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #151918;
+}
+
+.Navigator .Siltek-ccs-navigator img, .Navigator img
+{
+   border: 0;
+   margin: 0;
+   vertical-align: middle;
+}
+tr.Navigator td, td span.Navigator
+{
+   text-align: center;
+   vertical-align: middle;
+}
+
+.Sorter img
+{
+   border:0;
+   vertical-align:middle;
+   padding:0;
+   margin:0;
+   position:static;
+   z-index:1;
+   width: 12px;
+   height: 6px;
+}
+
+.Sorter a
+{
+   position:relative;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5C6A6A;
+}
+
+.Sorter a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5C6A6A;
+}
+
+.Sorter a:visited, .Sorter a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5C6A6A;
+}
+
+.Sorter a:hover, .Sorter a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #454F4F;
+}
+
+.Sorter
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color:#2D3434;
+}
+
+.Siltek-footer
+{
+   background: #454545;
+   margin:20px auto 0;
+   position: relative;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: center;
+   padding: 0;
+}
+
+.Siltek-footer a,
+.Siltek-footer a:link,
+.Siltek-footer a:visited,
+.Siltek-footer a:hover,
+.Siltek-footer td, 
+.Siltek-footer th,
+.Siltek-footer caption
+{
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer p 
+{
+   padding:0;
+   text-align: center;
+}
+
+.Siltek-footer a,
+.Siltek-footer a:link
+{
+   color: #54CBE3;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.Siltek-footer a:visited
+{
+   color: #54CBE3;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.Siltek-footer a:hover
+{
+   color: #09BDDC;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.Siltek-footer h1
+{
+   color: #879796;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer h2
+{
+   color: #A0ACAB;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer h3
+{
+   color: #3AC3DF;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer h4
+{
+   color: #C1CFD1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer h5
+{
+   color: #C1CFD1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer h6
+{
+   color: #C1CFD1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.Siltek-footer img
+{
+   border: none;
+   margin: 1px;
+}
+
+.Siltek-footer-inner
+{
+   margin: 0 auto;
+   width:961px;
+   padding:10px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+.Siltek-rss-tag-icon
+{
+   background:  url('/assets/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:30px;
+   min-width:19px;
+   display: inline-block;
+   text-indent: 22px;
+   background-position: left center;
+}
+
+.Siltek-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.Siltek-facebook-tag-icon
+{
+   background:  url('/assets/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.Siltek-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.Siltek-twitter-tag-icon
+{
+   background:  url('/assets/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.Siltek-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.Siltek-footer ul>li:before
+{
+   content:url('/assets/footerbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -16px;
+}
+.opera .Siltek-footer ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.Siltek-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #D3F2F8;
+}
+
+.Siltek-footer ul>li, .Siltek-footer ol
+{
+   padding: 0;
+}
+
+.Siltek-footer ul>li
+{
+   padding-left: 16px;
+}
+
+.Siltek-page-footer, 
+.Siltek-page-footer a,
+.Siltek-page-footer a:link,
+.Siltek-page-footer a:visited,
+.Siltek-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #B9C9CB;
+}
+
+.Siltek-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #96DFEE;
+}
+
+.Siltek-lightbox-wrapper 
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.Siltek-lightbox,
+.Siltek-lightbox-wrapper .Siltek-lightbox-image
+{
+   cursor: pointer;
+}
+
+.Siltek-lightbox-wrapper .Siltek-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.Siltek-lightbox-wrapper .Siltek-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.Siltek-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.Siltek-lightbox-wrapper .loading
+{
+   background: #fff url('/assets/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.Siltek-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.Siltek-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.Siltek-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.Siltek-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.Siltek-lightbox-wrapper .arrow.disabled 
+{
+   display: none;
+}
+
+.Siltek-lightbox-wrapper .arrow-t, 
+.Siltek-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.Siltek-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.Siltek-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.Siltek-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.Siltek-lightbox-wrapper .close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.Siltek-lightbox-wrapper .close .cw, 
+.Siltek-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.Siltek-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.Siltek-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.Siltek-lightbox-wrapper .close-alt, 
+.Siltek-lightbox-wrapper .arrow-right-alt, 
+.Siltek-lightbox-wrapper .arrow-left-alt 
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .Siltek-lightbox-wrapper .close-alt, 
+.ie8 .Siltek-lightbox-wrapper .arrow-right-alt, 
+.ie8 .Siltek-lightbox-wrapper .arrow-left-alt 
+{
+   display: block;
+}
+
+.ie8 .Siltek-lightbox-wrapper .cw, 
+.ie8 .Siltek-lightbox-wrapper .ccw 
+{
+   display: none;
+}
+
+.Siltek-content-layout .Siltek-content
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+.vamsi-blockheader .t, .vamsi-vmenublockheader .t {white-space: nowrap;}
+/* End Additional CSS Styles */

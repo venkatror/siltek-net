@@ -1,0 +1,2 @@
+module CampusRecruitmentTrainingHelper
+end
